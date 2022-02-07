@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书关联的英雄信息</title>
+</head>
+<body>
+<ul>{{ book.btitle }}</ul>
+<ul>
+    {% for hero in heros %}
+        <li>{{ hero.hname }}--{{ hero.hcomment }}<li/>
+    {% endfor %}
+</ul>
+</body>
+</html>
